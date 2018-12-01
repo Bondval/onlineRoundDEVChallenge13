@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Dev Challenge';
+    src: url('../fonts/icomoon.eot') format('embedded-opentype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dc {
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    font-family: 'Dev Challenge';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*#region -- Individual icons -- */
+.dc-smile1 {
+    &:before {
+        content: "\e900";
+    }
+}
+.dc-smile2 {
+    &:before {
+        content: "\e901";
+    }
+}
+.dc-smile3 {
+    &:before {
+        content: "\e902";
+    }
+}
+.dc-smile4 {
+    &:before {
+        content: "\e903";
+    }
+}
+.dc-smile5 {
+    &:before {
+        content: "\e904";
+    }
+}
+.dc-smile6 {
+    &:before {
+        content: "\e905";
+    }
+}
+.dc-smile7 {
+    &:before {
+        content: "\e906";
+    }
+}
+.dc-smile8 {
+    &:before {
+        content: "\e907";
+    }
+}
+.dc-smile9 {
+    &:before {
+        content: "\e908";
+    }
+}
+.dc-smile10 {
+    &:before {
+        content: "\e90d";
+    }
+}
+.dc-smile11 {
+    &:before {
+        content: "\e90e";
+    }
+}
+.dc-smile12 {
+    &:before {
+        content: "\e90f";
+    }
+}
+.dc-smile13 {
+    &:before {
+        content: "\e910";
+    }
+}
+.dc-smile14 {
+    &:before {
+        content: "\e911";
+    }
+}
+.dc-smile15 {
+    &:before {
+        content: "\e912";
+    }
+}
+
+.dc-notification {
+     &:before {
+         content: "\e909";
+     }
+}
+
+.dc-user{
+    &:before {
+        content: "\e916";
+    }
+}
+
+.dc-logo {
+    &:before {
+        content: "\e90b";
+    }
+}
+
+.dc-feedback {
+    &:before {
+        content: "\e90c";
+    }
+}
+.dc-save{
+    &:before {
+        content: "\e917";
+    }
+}
+.dc-message {
+      &:before {
+          content: "\e913";
+      }
+  }
+
+.dc-triangle {
+    &:before {
+        content: "\e914";
+    }
+}
+
+.dc-cloud {
+    &:before {
+        content: "\e90a";
+    }
+}
+.dc-frame {
+    &:before {
+        content: "\e915";
+    }
+}
+.dc-moon {
+    &:before {
+        content: "\e916";
+    }
+}
+.dc-more {
+    &:before {
+        content: "\e928";
+    }
+}
+.dc-facebook {
+    &:before {
+        content: "\e92a";
+    }
+}
+.dc-right-arrow {
+    &:before {
+        content: "\e92b";
+    }
+}
+.dc-left-arrow {
+    &:before {
+        content: "\e92c";
+    }
+}
+.dc-mail {
+    &:before {
+        content: "\e92d";
+    }
+}
+.dc-add-message {
+    &:before {
+        content: "\e92e";
+    }
+}
+.dc-reload {
+    &:before {
+        content: "\e92f";
+    }
+}
+
+@font-face {
+    font-family: "InputMono";
+    src: url("../fonts/InputMono-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "InputMono";
+    src: url("../fonts/InputMono-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "InputMono";
+    src: url("../fonts/InputMono-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "InputMono";
+    src: url("../fonts/InputMono-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+

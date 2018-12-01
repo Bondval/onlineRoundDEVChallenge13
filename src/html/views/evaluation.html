@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="description" content="DevChallenge">
+  <link rel="icon" type="image/x-icon" href="https://devchallenge.it/media/media/1101_favicon-devchallenge.ico">
+  <title>DEV Challenge</title>
+  <link rel="stylesheet" href="css/style.bundle.css">
+</head>
+<body>
+<!-- header -->
+<%= _.template(require('./../includes/header.html'))(data) %>
+<!-- header -->
+
+<!-- main -->
+<%= _.template(require('./../includes/top-bar.html'))(data) %>
+
+<main class="evaluation">
+  <div class="evaluation__row">
+    <div class="evaluation__title">ID роботи</div>
+    <div class="evaluation__title">Дизайн
+      <i class="icon__info dc dc-feedback">
+      </i>
+    </div>
+    <div class="evaluation__title">UX <i class="icon__info dc dc-feedback" title="UX"></i></div>
+    <div class="evaluation__title">Креативність <i class="icon__info dc dc-feedback"></i></div>
+    <div class="evaluation__title">Контент <i class="icon__info dc dc-feedback"></i></div>
+    <div class="evaluation__title">Загальний бал</div>
+  </div>
+
+  <div class="evaluation__row evaluation__row_appreciated">
+    <div class="evaluation__column">
+      <span class="evaluation__id">gefghtyujyr7u46435tg4</span>
+      <div class="icon__comment dc dc-message">
+        <span class="add-comment__popup">Додати коментар</span>
+        <div class="add-comment__field dc dc-triangle">
+          <div class="comment">
+            <p class="comment__content">Тут сподобалось, що учасник додав опис своеї роботи, за що можна дати додатковий
+              бал</p>
+            <a class="comment__delete" href="#">&times;</a>
+          </div>
+          <div class="comment">
+            <p class="comment__content">А ще класні іконки</p>
+            <a class="comment__delete" href="#">&times;</a>
+          </div>
+          <input class="add-comment__input add-comment_border-top" type="text" placeholder="Додати коментар">
+        </div>
+      </div>
+    </div>
+    <div class="evaluation__column">
+      <span class="evaluation__mark transform-scale">3</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_satisfactorily"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">5</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_perfectly"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">5</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_perfectly"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">3</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_satisfactorily"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">3</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_satisfactorily"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="evaluation__row evaluation__row_appreciated">
+    <div class="evaluation__column"><span class="evaluation__id">gefghtyujyr7u46435tg4</span>
+      <div class="icon__comment dc dc-message">
+        <span class="add-comment__popup">Додати коментар</span>
+        <div class="add-comment__field dc dc-triangle">
+          <div class="comment">
+            <p class="comment__content">Тут сподобалось, що учасник додав опис своеї роботи, за що можна дати додатковий
+              бал</p>
+            <a class="comment__delete" href="#">&times;</a>
+          </div>
+          <div class="comment">
+            <p class="comment__content">А ще класні іконки</p>
+            <a class="comment__delete" href="#">&times;</a>
+          </div>
+          <input class="add-comment__input add-comment_border-top" type="text" placeholder="Додати коментар">
+        </div>
+      </div>
+    </div>
+    <div class="evaluation__column"><span class="evaluation__mark">5</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_perfectly"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">3</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_satisfactorily"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">5</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_perfectly"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">3</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_satisfactorily"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">4</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_good"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="evaluation__row">
+    <div class="evaluation__column">
+      <span class="evaluation__id">gefghtyujyr7u46435tg4</span>
+      <div class="icon__add-message dc dc-add-message">
+        <span class="add-comment__popup">Додати коментар</span>
+        <span class="add-comment__field dc dc-triangle">
+            <input class="add-comment__input" type="text" placeholder="Додати коментар">
+          </span>
+      </div>
+    </div>
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="evaluation__row">
+    <div class="evaluation__column">
+      <span class="evaluation__id">gefghtyujyr7u46435tg4</span>
+      <div class="icon__add-message dc dc-add-message">
+        <span class="add-comment__popup">Додати коментар</span>
+        <span class="add-comment__field dc dc-triangle">
+            <input class="add-comment__input" type="text" placeholder="Додати коментар">
+          </span>
+      </div>
+    </div>
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="evaluation__row">
+    <div class="evaluation__column">
+      <span class="evaluation__id">gefghtyujyr7u46435tg4</span>
+      <div class="icon__add-message dc dc-add-message">
+        <span class="add-comment__popup">Додати коментар</span>
+        <span class="add-comment__field dc dc-triangle">
+            <input class="add-comment__input" type="text" placeholder="Додати коментар">
+          </span>
+      </div>
+    </div>
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="evaluation__row">
+    <div class="evaluation__column">
+      <span class="evaluation__id">gefghtyujyr7u46435tg4</span>
+      <div class="icon__add-message dc dc-add-message">
+        <span class="add-comment__popup">Додати коментар</span>
+        <span class="add-comment__field dc dc-triangle">
+            <input class="add-comment__input" type="text" placeholder="Додати коментар">
+          </span>
+      </div>
+    </div>
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="evaluation__row evaluation__row_appreciated">
+    <div class="evaluation__column"><span class="evaluation__id">gefghtyujyr7u46435tg4</span>
+      <div class="icon__comment dc dc-message">
+        <span class="add-comment__popup">Додати коментар</span>
+        <div class="add-comment__field dc dc-triangle">
+          <div class="comment">
+            <p class="comment__content">Тут сподобалось, що учасник додав опис своеї роботи, за що можна дати додатковий
+              бал</p>
+            <a class="comment__delete" href="#">&times;</a>
+          </div>
+          <div class="comment">
+            <p class="comment__content">А ще класні іконки</p>
+            <a class="comment__delete" href="#">&times;</a>
+          </div>
+          <input class="add-comment__input add-comment_border-top" type="text" placeholder="Додати коментар">
+        </div>
+      </div>
+    </div>
+    <div class="evaluation__column"><span class="evaluation__mark">5</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_perfectly"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">3</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_satisfactorily"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">5</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_perfectly"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">3</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_satisfactorily"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column"><span class="evaluation__mark">4</span>
+      <div class="evaluation-bar">
+        <div class="evaluation-bar__progress evaluation-bar__progress_good"></div>
+      </div>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="evaluation__row">
+    <div class="evaluation__column">
+      <span class="evaluation__id">gefghtyujyr7u46435tg4</span>
+      <div class="icon__add-message dc dc-add-message">
+        <span class="add-comment__popup">Додати коментар</span>
+        <span class="add-comment__field dc dc-triangle">
+            <input class="add-comment__input" type="text" placeholder="Додати коментар">
+          </span>
+      </div>
+    </div>
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="evaluation__row">
+    <div class="evaluation__column">
+      <span class="evaluation__id">gefghtyujyr7u46435tg4</span>
+      <div class="icon__add-message dc dc-add-message">
+        <span class="add-comment__popup">Додати коментар</span>
+        <span class="add-comment__field dc dc-triangle">
+            <input class="add-comment__input" type="text" placeholder="Додати коментар">
+          </span>
+      </div>
+    </div>
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="evaluation__row">
+    <div class="evaluation__column">
+      <span class="evaluation__id">gefghtyujyr7u46435tg4</span>
+      <div class="icon__add-message dc dc-add-message">
+        <span class="add-comment__popup">Додати коментар</span>
+        <span class="add-comment__field dc dc-triangle">
+            <input class="add-comment__input" type="text" placeholder="Додати коментар">
+          </span>
+      </div>
+    </div>
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+
+    <div class="evaluation__column">
+      <span class="evaluation__column_not-rated">Не оцінено</span>
+      <i class="icon__more dc dc-triangle"></i>
+      <div class="evaluation__popup dc dc-triangle">
+        <span class="evaluation__min-mark">1</span>
+        <input class="evaluation__slider" type="range" min="0" max="5" step="1" value="3">
+        <span class="evaluation__max-mark">5</span>
+      </div>
+    </div>
+  </div>
+
+  <!--popup-->
+  <div id="popup" class="overlay">
+    <div class="popup-result">
+      <h2 class="popup-result__title mrg-r-xxl">Роботи успішно оцінено</h2>
+      <a class="popup-result__close" href="#">&times;</a>
+
+      <p class="popup-result__topic">Дякуємо! Ви оцінили 35 робіт</p>
+      <p class="popup-result__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget imperdiet quam. Ut ut scelerisque nisi.
+        Praesent sit amet interdum quam. Quisque eros ipsum, rhoncus ut quam ac, condimentum fringilla lectus.
+        Aliquam
+        eros risus, tincidunt vitae luctus id, cursus ut dolor. Vestibulum odio lectus, ultricies vel pulvinar
+        dignissim, auctor eget magna. Duis dapibus quam metus, sit amet elementum dui posuere sit amet. Cras
+        molestie
+        est a erat sodales, non iaculis diam posuere. Fusce vel nunc quis ex sodales facilisis sed sed mauris.
+        Integer
+        at maximus ex, nec consequat ligula.
+      </p>
+      <div class="popup-result__btns">
+        <a class="popup-result__back full-width-sm mrg-top-sm" href="index.html">Повернутися на
+          головну</a>
+        <a class="popup-result__edit full-width-sm mrg-top-sm" href="#">Редагувати оцінку</a>
+      </div>
+    </div>
+  </div>
+  <!--popup-->
+
+  <a aria-label="Save" class="evaluation__save transform-scale" href="#popup">
+    <i class="dc dc-save"></i>
+  </a>
+
+</main>
+<!-- main -->
+
+</body>
+</html>

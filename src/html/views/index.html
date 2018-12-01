@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="description" content="DevChallenge">
+  <link rel="icon" type="image/x-icon" href="https://devchallenge.it/media/media/1101_favicon-devchallenge.ico">
+  <title>DEV Challenge</title>
+  <link rel="stylesheet" href="css/style.bundle.css">
+</head>
+<body>
+
+  <!-- header -->
+  <%= _.template(require('./../includes/header.html'))(data) %>
+  <!-- header -->
+
+  <!-- main -->
+  <main class="main">
+
+    <div id="slider">
+      <div id="slide-holder">
+        <div class="slide"><img src="img/first-slide.png" alt="first slide"/></div>
+        <div class="slide"><img src="img/first-slide.png" alt="second slide"/></div>
+        <div class="slide"><img src="img/first-slide.png" alt="third slide"/></div>
+        <!--<div class="slide"><img src="img/background-img2.png"/></div>-->
+        <!--<div class="slide"><img src="img/first-slide.png"/></div>-->
+      </div>
+    </div>
+    <!--<div><img src="img/first-slide.png"/></div>-->
+
+    <div class="main__container">
+
+      <%= _.template(require('./../includes/top-bar.html'))(data) %>
+
+      <div class="qualification">
+
+        <h1 class="qualification__title"><i class="slash">/</i> Кваліфікація</h1>
+
+        <div class="qualification__container">
+          <p class="qualification__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget imperdiet quam. Ut ut scelerisque
+            nisi. Praesent sit amet interdum quam. Quisque eros ipsum, rhoncus ut quam ac, condimentum fringilla lectus.
+            Aliquam eros risus, tincidunt vitae luctus id, cursus ut dolor. Vestibulum odio lectus, ultricies vel
+            pulvinar dignissim, auctor eget magna. Duis dapibus quam metus, sit amet elementum dui posuere sit amet.
+            Cras molestie est a erat sodales, non iaculis diam posuere. Fusce vel nunc quis ex sodales facilisis sed sed
+            mauris. Integer at maximus ex, nec consequat ligula.</p>
+
+          <p class="qualification__content">Nullam id lacinia nulla. Nunc fringilla diam sed leo vulputate, sit amet ullamcorper metus mattis. Donec at
+            tortor ipsum. Nunc id ex sapien. Curabitur sed diam lacus. Morbi convallis mauris sed arcu placerat
+            bibendum. Aliquam feugiat lorem suscipit magna tristique faucibus. Sed ac ornare nisl. Proin vel risus
+            justo. Ut et purus vulputate dui tincidunt fringilla et sit amet sem. Mauris viverra, elit id ullamcorper
+            mollis, magna magna tempor quam, dictum pharetra diam ligula at odio. Pellentesque ullamcorper, metus
+            consequat semper vulputate, nibh nisi gravida magna, sit amet posuere ligula tortor non ex.</p>
+
+          <div class="mrg-top-lg">
+            <button class="qualification__btn_invert full-width-xs mrg-top-sm">Переглянути завдання</button>
+            <button class="qualification__btn_default full-width-xs mrg-top-sm flt-right">Перейти до оцінювання</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- main -->
+
+</body>
+</html>

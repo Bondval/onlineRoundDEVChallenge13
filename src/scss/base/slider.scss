@@ -1,0 +1,42 @@
+$slide-width: 40vw;
+$slide-height: 100vh;
+
+#slider {
+  max-width:100%;
+  overflow: hidden;
+}
+
+.slide {
+  background-color: $yellow;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  width: 33vw;
+  height: $slide-height;
+  float: left;
+  position: relative;
+}
+
+#slide-holder {
+  // wide enough to fit all the slides
+  width: 400%;
+  position: relative;
+  left: 0;
+  animation: scroller 10s infinite;
+}
+
+// need a step for each slide
+@keyframes scroller {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-$slide-width); }
+  66% { transform: translateX(-$slide-width*2); }
+  100% { transform: translateX(0); }
+}
+
+// additional styling
+
+#slider {
+  margin: 0 auto;
+}
+
