@@ -1,7 +1,8 @@
 DEV Challenge (first fight)
 ======================
 
-Webapp based on Html/Css, without JavaScript.
+This site was created in 10 days for the DEV Challenge online tour.
+Web app based on Html/Css, without JavaScript.
 
 Getting Started
 ===============
